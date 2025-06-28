@@ -4,25 +4,18 @@ import { PageFunctionOn, SmartHandle, EvaluationArgument } from "playwright-core
 import { IButton } from "../interfaces/Button.interface";
 
 export class Button implements IButton, CustomAssertion {
-    // readonly page!: Page;
-    locator: Locator;
-    // private eleLocator!: Locator;
+    readonly page!: Page;
+    readonly locator: Locator;
 
-    // constructor(page: Page, selector: string) {
-    //     this.page = page;
-    //     this.locator = this.page.locator(selector);
-    // }
-    
-    constructor(selector: any) {
-        // this.page = page;
-        // this.locator = this.page.locator(selector);
-        this.locator = selector as Locator;
+    constructor(page: Page, selector: string) {
+        this.page = page;
+        this.locator = this.page.locator(selector);
     }
+
 
 
     async click(): Promise<void> {
         await this.locator.isVisible();
-        await expect(this.locator.isVisible()).toBeTruthy();
         await this.locator.click();
     }
 

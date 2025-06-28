@@ -1,8 +1,8 @@
 import { expect, Locator, Page } from "@playwright/test";
 import { Input } from "../components/Input";
 
-export class BasePage {
-    readonly page!: Page;
+export abstract class BasePage {
+    protected readonly page!: Page;
     readonly url!: string;
 
     constructor(page: Page) {

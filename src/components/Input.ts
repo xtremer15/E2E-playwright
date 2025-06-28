@@ -7,10 +7,11 @@ export class Input implements InputInterface, CustomAssertion {
     readonly page!: Page;
     private selector!: Locator;
 
-    constructor(page:Page,selector: string) {
+    constructor(page: Page, selector: string) {
         this.page = page;
         this.selector = page.locator(selector);
     }
+
 
     async assertMessage(message: string): Promise<void> {
         expect(await this.selector.textContent()).toBe(message);
@@ -20,7 +21,7 @@ export class Input implements InputInterface, CustomAssertion {
     async type(text: string): Promise<void> {
         await this.selector.focus();
         expect(await this.selector).toBeFocused();
-        await this.selector.fill(text,{timeout:500});
+        await this.selector.fill(text, { timeout: 500 });
     }
 
 }

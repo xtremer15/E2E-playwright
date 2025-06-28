@@ -1,8 +1,11 @@
 {
     "LoginPage": {
-        "usernameField": "#username",
-        "passwordField": "#password",
-        "loginButton": "#login"
+        "usernameField": "app-input.ng-untouched:nth-child(1) > p-floatlabel:nth-child(1) > input:nth-child(1)",
+        "passwordField": "app-input.ng-untouched:nth-child(2) > p-floatlabel:nth-child(2) > input:nth-child(2n-1)",
+        "loginButton": "#login button",
+        "emailErrorMessage": ".ftl-error-message",
+        "passwordErrorMessage": ".ftl-error-message"
+        
     }
     
 }

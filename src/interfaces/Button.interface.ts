@@ -1,6 +1,6 @@
 import { Locator } from "@playwright/test";
 
 export interface IButton {
-    locator:Locator;
+    readonly locator: Locator;
     click(): Promise<void> | void;
 }
