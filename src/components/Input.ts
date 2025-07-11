@@ -10,6 +10,7 @@ export class Input implements InputInterface, CustomAssertion {
     constructor(page: Page, selector: string) {
         this.page = page;
         this.selector = page.locator(selector);
+        console.log("Input selector:", selector);
     }
 
 

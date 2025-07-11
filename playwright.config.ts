@@ -24,9 +24,9 @@ export default defineConfig({
   outputDir: 'src/Ftest-results/',
   timeout: 3000,
   // path to the global setup files.
-  globalSetup: require.resolve('./global-setup'),
+  globalSetup: require.resolve('./src/global.setup.ts'),
   // path to the global teardown files.
-  globalTeardown: require.resolve('./global-teardown'),
+  globalTeardown: require.resolve('./src/global.teardown.ts'),
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */

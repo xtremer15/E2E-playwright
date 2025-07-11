@@ -13,7 +13,6 @@ export abstract class BasePage {
         await this.page.goto(url);
     }
     async waitForUrl(url: string): Promise<void> {
-        url ? await this.page.waitForURL(url) : await this.page.waitForURL("www.google.com");
         expect(await this.page.url()).toBe(url);
     }
 

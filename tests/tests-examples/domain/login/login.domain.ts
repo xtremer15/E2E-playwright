@@ -8,12 +8,17 @@ export class LoginDomain {
         this.loginPage = PageFactory.createPage<LoginPage>(page, 'login') as LoginPage;
     }
 
-    public loginUser(email: string, password: string): void {
-        this.loginPage.fillForm(email, password);
-        this.loginPage.clickLogin();
+    public async navigetToLoginPage(): Promise<void> {
+        await this.loginPage.goTo('https://angular-login-module.vercel.app/login')
     }
 
-    public async checkEmailErrorIsDisplayed(expectedError: string) {
-        await expect(this.loginPage.invalidEmailErrorText).toBe(expectedError);
+    public async loginUser(email: string, password: string): Promise<void> {
+        await this.loginPage.fillForm(email, password);
+        await this.loginPage.clickLogin();
+    }
+
+    public async checkEmailErrorIsDisplayed(expectedError: any) {
+        await this.loginPage.invalidEmailErrorText.isVisible();
+        expect(await this.loginPage.invalidEmailErrorText.textContent()).toBe(expectedError);
     }
 }

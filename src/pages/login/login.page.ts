@@ -5,17 +5,17 @@ import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
 export class LoginPage extends BasePage {
+    private readonly locators = LocatorManager.getInstance().getLocators('LoginPage');
     constructor(page: Page) {
         super(page);
     }
 
-    private readonly locators = LocatorManager.getInstance().getLocators('LoginPage');
 
-    private emailInput: Input = new Input(this.page, this.locators.emailInput);
-    private passwordInput: Input = new Input(this.page, this.locators.passwordInput);
+    private emailInput: Input = new Input(this.page, this.locators.usernameField);
+    private passwordInput: Input = new Input(this.page, this.locators.passwordField);
     private loginButton: Button = new Button(this.page, this.locators.loginButton);
-    private invalidEmailError = this.page.locator(this.locators.invalidEmailError);
-    private invalidPasswordError = this.page.locator(this.locators.invalidPasswordError);
+    private userErrorMessage = this.page.locator(this.locators.userErrorMessage);
+    private invalidPasswordError = this.page.locator(this.locators.passwordErrorMessage);
 
 
     clickLogin() {
@@ -27,11 +27,11 @@ export class LoginPage extends BasePage {
         this.passwordInput.type(password);
     }
     get invalidEmailErrorText() {
-        return this.invalidEmailError.textContent();
+        return this.userErrorMessage
 
     }
 
     get invalidPasswordErrorText() {
-        return this.invalidPasswordError.textContent();
+        return this.invalidPasswordError
     }
 }

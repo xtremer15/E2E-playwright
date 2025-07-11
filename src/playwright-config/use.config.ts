@@ -6,7 +6,7 @@ export const USE_GLOBAL_SETUP: any = {
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    storageState: 'src/storageState.json',
+    // storageState: 'src/storageState.json',
 
     acceptDownloads: false, // Accept downloads automatically
 

@@ -1,5 +1,9 @@
-import { test as setup } from '@playwright/test';
+// global-setup.ts
+import { chromium, FullConfig } from '@playwright/test';
 
-setup('create new database', async ({ page }) => {
-    await page.goto("/")
-});
+async function globalSetup(config: FullConfig) {
+    // Perform global setup steps here, such as logging in and saving state
+    console.log('Global setup is running...');
+}
+
+export default globalSetup;
