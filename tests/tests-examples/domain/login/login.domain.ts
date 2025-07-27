@@ -12,8 +12,9 @@ export class LoginDomain {
         await this.loginPage.goTo('https://angular-login-module.vercel.app/login')
     }
 
-    public async loginUser(email: string, password: string): Promise<void> {
-        await this.loginPage.fillForm(email, password);
+    public async loginUser(email: string = '', password: string = ''): Promise<void> {
+        await this.loginPage.setEmail(email);
+        await this.loginPage.setPassword(password);
         await this.loginPage.clickLogin();
     }
 

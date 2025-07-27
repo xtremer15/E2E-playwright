@@ -1,11 +1,12 @@
 {
     "LoginPage": {
-        "usernameField": "app-input.ng-untouched:nth-child(1) > p-floatlabel:nth-child(1) > input:nth-child(1)",
+        "usernameField": "//label[text()=\"User\"]/preceding-sibling::input",
         "passwordField": "//label[text()=\"Password\"]/preceding-sibling::input",
         "loginButton": "#login button",
         "userErrorMessage": "div.error:first-of-type",
         "passwordErrorMessage": "div.error:nth-of-type(2)"
-        
+    },
+    "AngularJiraClone": {
+        "transactionsHub": "//*[text()=\"Transactions Hub\"]"
     }
-    
 }

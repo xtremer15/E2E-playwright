@@ -18,14 +18,23 @@ export class LoginPage extends BasePage {
     private invalidPasswordError = this.page.locator(this.locators.passwordErrorMessage);
 
 
-    clickLogin() {
-        this.loginButton.click();
+    async clickLogin() {
+        await this.page.waitForLoadState('domcontentloaded');
+        await this.loginButton.click();
     }
 
-    fillForm(email: string, password: string): void {
-        this.emailInput.type(email);
-        this.passwordInput.type(password);
+    async fillForm(email: string, password: string) {
+        await this.emailInput.type(email);
+        await this.passwordInput.type(password);
     }
+
+    async setEmail(email: string): Promise<void> {
+        await this.emailInput.type(email);
+    }
+    async setPassword(password: string): Promise<void> {
+        await this.passwordInput.type(password);
+    }
+
     get invalidEmailErrorText() {
         return this.userErrorMessage
 

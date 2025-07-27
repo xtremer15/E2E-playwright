@@ -9,20 +9,25 @@ export class Input implements InputInterface, CustomAssertion {
 
     constructor(page: Page, selector: string) {
         this.page = page;
-        this.selector = page.locator(selector);
+        this.selector = this.page.locator(selector);
         console.log("Input selector:", selector);
     }
 
 
     async assertMessage(message: string): Promise<void> {
+        await this.selector.waitFor({ state: 'visible' });
         expect(await this.selector.textContent()).toBe(message);
     }
 
 
     async type(text: string): Promise<void> {
-        await this.selector.focus();
-        expect(await this.selector).toBeFocused();
+        console.log("Waiting for selector to be visible...");
+        await expect(this.selector).toBeVisible();
+
+        console.log(`Filling input with: ${text}`);
+        await this.selector.click();
         await this.selector.fill(text, { timeout: 500 });
+        console.log("Fill complete");
     }
 
 }
