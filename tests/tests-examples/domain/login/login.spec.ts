@@ -12,7 +12,7 @@ test.describe('Login Page Tests', () => {
         loginPage = PageFactory.createPage<LoginPage>(page, 'login') as LoginPage;
         loginDomain = new LoginDomain(page);
         await loginDomain.navigetToLoginPage();
-        await page.waitForLoadState('networkidle');
+        await page.waitForLoadState('domcontentloaded');
 
     });
 
@@ -25,6 +25,7 @@ test.describe('Login Page Tests', () => {
     test('Should login user with valid data', async ({ page }) => {
         // await loginPage.fillForm('admin', 'admin');
         await loginDomain.loginUser('admin', 'admin');
+        await loginDomain.navigateToJiraClone();
         // await loginPage.clickLogin();
     });
 

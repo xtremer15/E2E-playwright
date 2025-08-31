@@ -1,6 +1,7 @@
 import { expect } from "@playwright/test";
 import { PageFactory } from "../../../../src/factory/page-factory";
 import { LoginPage } from "../../../../src/pages/login/login.page";
+import { awaitPageNavigation } from "../../../../src/utils/Utils";
 
 export class LoginDomain {
     private loginPage: LoginPage;
@@ -21,5 +22,9 @@ export class LoginDomain {
     public async checkEmailErrorIsDisplayed(expectedError: any) {
         await this.loginPage.invalidEmailErrorText.isVisible();
         expect(await this.loginPage.invalidEmailErrorText.textContent()).toBe(expectedError);
+    }
+
+    public async navigateToJiraClone() {
+        await this.loginPage.navigateToJira()
     }
 }

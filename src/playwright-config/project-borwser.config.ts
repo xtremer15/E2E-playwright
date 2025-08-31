@@ -1,11 +1,18 @@
 import { devices } from "@playwright/test";
 
-export const PROJECT_BROWSER_CONFIG:any = [
+export const PROJECT_BROWSER_CONFIG: any = [
     {
-        name: 'chromium',
+        name: 'login-chromium',
+        testMatch: /.*\/login\/.*\.spec\.ts/,
         use: { ...devices['Desktop Chrome'] },
-    }
+    },
+    {
+        name: 'jira-clone-chromium',
+        testMatch: /.*\/jira-clone\/.*\.spec\.ts/,
+        dependencies: ['login-chromium'],
+        use: { ...devices['Desktop Chrome'] },
 
+    },
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },

@@ -3,7 +3,8 @@ export const USE_GLOBAL_SETUP: any = {
     //ToDO:Set as mobile url then change angular module to be just for web
     // 'https://flutter-login-module.vercel.app/',
     baseURL: "https://angular-login-module.vercel.app/login",
-
+    actionTimeout: 5000,
+    navigationTimeout: 15000,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     // storageState: 'src/storageState.json',

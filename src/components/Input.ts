@@ -1,6 +1,7 @@
 import { expect, Locator, Page } from "@playwright/test";
 import { CustomAssertion } from "./CustomAssertion";
 import { InputInterface } from "../interfaces/Input.interface";
+import { retryWithBackoff } from "../utils/Utils";
 
 export class Input implements InputInterface, CustomAssertion {
 
@@ -22,11 +23,11 @@ export class Input implements InputInterface, CustomAssertion {
 
     async type(text: string): Promise<void> {
         console.log("Waiting for selector to be visible...");
-        await expect(this.selector).toBeVisible();
+        await retryWithBackoff(() => expect(this.selector).toBeVisible());
 
         console.log(`Filling input with: ${text}`);
-        await this.selector.click();
-        await this.selector.fill(text, { timeout: 500 });
+        await retryWithBackoff(() => expect(this.selector).toBeEnabled());
+        await this.selector.fill(text);
         console.log("Fill complete");
     }
 

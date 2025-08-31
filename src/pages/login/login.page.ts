@@ -3,6 +3,7 @@ import { BasePage } from "../../utils/BasePage";
 import { LocatorManager } from "../../locators/Locators";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { awaitPageNavigation } from "../../utils/Utils";
 
 export class LoginPage extends BasePage {
     private readonly locators = LocatorManager.getInstance().getLocators('LoginPage');
@@ -23,8 +24,13 @@ export class LoginPage extends BasePage {
         await this.loginButton.click();
     }
 
+    async navigateToJira() {
+        await awaitPageNavigation(this.page, "/project/board")
+    }
+
     async fillForm(email: string, password: string) {
         await this.emailInput.type(email);
+        await this.page.waitForTimeout(1000)
         await this.passwordInput.type(password);
     }
 

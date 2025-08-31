@@ -15,7 +15,7 @@ export class Button implements IButton, CustomAssertion {
 
 
     async click(): Promise<void> {
-        await this.locator.isVisible();
+        await expect(this.locator).toBeVisible();
         await this.locator.click();
     }
 
