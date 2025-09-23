@@ -27,17 +27,17 @@ export class LocatorManager {
   // Load locators from JSON file
   private loadLocators(): Locators {
     const locatorsPath = path.resolve(__dirname, './locators.json');
-    console.log('🔍 Loading locators from:', locatorsPath);
+    // console.log('🔍 Loading locators from:', locatorsPath);
     const rawData = fs.readFileSync(locatorsPath, 'utf-8');
     const parsedData = JSON.parse(rawData);
-    console.log('📄 Loaded locators:', parsedData); // <-- Add this
+    // console.log('📄 Loaded locators:', parsedData); // <-- Add this
     return parsedData
   }
 
   // Get locators for a specific page
   public getLocators(page: string): { [element: string]: string } {
     const localePage = this.locators[page];
-    console.log(`🔍 Getting locators for page: ${page}`, localePage);
+    // console.log(`🔍 Getting locators for page: ${page}`, localePage);
     return localePage
   }
 }

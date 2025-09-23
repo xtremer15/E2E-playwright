@@ -11,7 +11,7 @@ export class Input implements InputInterface, CustomAssertion {
     constructor(page: Page, selector: string) {
         this.page = page;
         this.selector = this.page.locator(selector);
-        console.log("Input selector:", selector);
+        // console.log("Input selector:", selector);
     }
 
 
@@ -22,13 +22,13 @@ export class Input implements InputInterface, CustomAssertion {
 
 
     async type(text: string): Promise<void> {
-        console.log("Waiting for selector to be visible...");
+        // console.log("Waiting for selector to be visible...");
         await retryWithBackoff(() => expect(this.selector).toBeVisible());
 
-        console.log(`Filling input with: ${text}`);
+        // console.log(`Filling input with: ${text}`);
         await retryWithBackoff(() => expect(this.selector).toBeEnabled());
         await this.selector.fill(text);
-        console.log("Fill complete");
+        // console.log("Fill complete");
     }
 
 }

@@ -9,7 +9,7 @@ test.describe('Login Page Tests', () => {
     let loginDomain: LoginDomain;
     let loginPage: LoginPage;
     test.beforeEach(async ({ page }) => {
-        loginPage = PageFactory.createPage<LoginPage>(page, 'login') as LoginPage;
+        // loginPage = PageFactory.createPage<LoginPage>(page, 'login') as LoginPage;
         loginDomain = new LoginDomain(page);
         await loginDomain.navigetToLoginPage();
         await page.waitForLoadState('domcontentloaded');
@@ -27,6 +27,7 @@ test.describe('Login Page Tests', () => {
         await loginDomain.loginUser('admin', 'admin');
         await loginDomain.navigateToJiraClone();
         // await loginPage.clickLogin();
+        // await loginPage.locator(await loginPage.getLoginBtn()).click();
     });
 
 });

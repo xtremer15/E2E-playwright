@@ -22,7 +22,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   testIgnore: '*test-assets',
   outputDir: 'src/Ftest-results/',
-  timeout: 30000,
+  // timeout: 8000,
   // path to the global setup files.
   globalSetup: require.resolve('./src/global.setup.ts'),
   // path to the global teardown files.
