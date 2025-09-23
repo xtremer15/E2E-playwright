@@ -1,10 +1,11 @@
 import { devices } from "@playwright/test";
+import { channel } from "diagnostics_channel";
 
 export const PROJECT_BROWSER_CONFIG: any = [
     {
         name: 'login-chromium',
         testMatch: /.*\/login\/.*\.spec\.ts/,
-        use: { ...devices['Desktop Chrome'] },
+        use: { ...devices['Desktop Firefox'] },
     },
     {
         name: 'jira-clone-chromium',
