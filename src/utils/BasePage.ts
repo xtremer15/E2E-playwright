@@ -1,135 +1,146 @@
 import { expect, Locator, Page } from "@playwright/test";
 import { Input } from "../components/Input";
+import { BaseComponent } from "../components/BaseComponent";
 import { logger } from "./logger";
 
 export abstract class BasePage {
-    protected readonly page!: Page;
-    readonly url!: string;
+  protected readonly page!: Page;
+  readonly url!: string;
 
-    constructor(page: Page) {
-        this.page = this.createInterceptedPage(page);
-        console.log("BasePage constructor called");
-    }
+  constructor(page: Page) {
+    this.page = this.createInterceptedPage(page);
+    console.log("BasePage constructor called");
 
-    async goTo(url: string): Promise<void> {
-        await this.page.goto(url);
-    }
-    async waitForUrl(url: string): Promise<void> {
-        expect(await this.page.url()).toBe(url);
-    }
+    return new Proxy(this, {
+      get(target, prop, receiver) {
+        const value = Reflect.get(target, prop, receiver);
+        if (value instanceof BaseComponent) {
+          return (target as any).createInterceptedComponent(value, String(prop));
+        }
+        return value;
+      }
+    });
+  }
+
+  async goTo(url: string): Promise<void> {
+    await this.page.goto(url);
+  }
+  async waitForUrl(url: string): Promise<void> {
+    expect(await this.page.url()).toBe(url);
+  }
 
 
-    async waitForElementVisibility(selector: any): Promise<void> {
-        await this.page.waitForSelector(selector, { state: 'visible' });
-        const isVisible = await this.page.locator(selector).isVisible()
-        expect(isVisible).toBeTruthy();
-    }
+  async waitForElementVisibility(selector: any): Promise<void> {
+    await this.page.waitForSelector(selector, { state: 'visible' });
+    const isVisible = await this.page.locator(selector).isVisible()
+    expect(isVisible).toBeTruthy();
+  }
 
 
 
-    async checkErrorMessage(locator: string, erorMessage: string) {
-        await this.waitForElementVisibility(locator);
-        const errorMsg = await this.page.locator(locator).innerText();
-        expect(errorMsg).toBe(erorMessage);
-    }
+  async checkErrorMessage(locator: string, erorMessage: string) {
+    await this.waitForElementVisibility(locator);
+    const errorMsg = await this.page.locator(locator).innerText();
+    expect(errorMsg).toBe(erorMessage);
+  }
 
-    locator(selector: string): Locator {
-        const originalLocator = this.page.locator(selector);
+  locator(selector: string): Locator {
+    const originalLocator = this.page.locator(selector);
 
-        return new Proxy(originalLocator, {
-            get: (target, prop: PropertyKey) => {
-                const value = (target as any)[prop];
-                if (typeof value === "function") {
-                    return async (...args: any[]) => {
-                        logger.info(
-                            `Calling method ${String(
-                                prop
-                            )} on locator: ${selector} with arguments: ${JSON.stringify(
-                                args
-                            )}`
-                        );
-                        console.log("target locator", target)
-                        console.log("args", ...args)
+    return new Proxy(originalLocator, {
+      get: (target, prop: PropertyKey) => {
+        const value = (target as any)[prop];
+        if (typeof value === "function") {
+          return async (...args: any[]) => {
+            logger.info(
+              `Calling method ${String(
+                prop
+              )} on locator: ${selector} with arguments: ${JSON.stringify(
+                args
+              )}`
+            );
+            console.log("target locator", target)
+            console.log("args", ...args)
 
-                        const result = await value.call(target, ...args);
-                        console.log("result", result)
-                        logger.info(
-                            `Method ${String(
-                                prop
-                            )} on locator: ${selector} completed with result: ${result}`
-                        );
-                        return result;
-                    };
-                }
-                return value;
-            },
-        });
-    }
+            const result = await value.call(target, ...args);
+            console.log("result", result)
+            logger.info(
+              `Method ${String(
+                prop
+              )} on locator: ${selector} completed with result: ${result}`
+            );
+            return result;
+          };
+        }
+        return value;
+      },
+    });
+  }
 
-    getByRole(role: string, options?: any): Locator {
-        const originalLocator = this.page.getByRole(role as any, options);
-        const selectorDescription = `role = ${role}${options ? ` with options ${JSON.stringify(options)}` : ""
-            }`;
+  getByRole(role: string, options?: any): Locator {
+    const originalLocator = this.page.getByRole(role as any, options);
+    const selectorDescription = `role = ${role}${options ? ` with options ${JSON.stringify(options)}` : ""
+      }`;
 
-        return new Proxy(originalLocator, {
-            get: (target, prop: PropertyKey) => {
-                const value = (target as any)[prop];
-                if (typeof value === "function") {
-                    return async (...args: any[]) => {
-                        if (args.length > 0) {
-                            logger.info(`Arguments: ${JSON.stringify(args)}`);
-                        }
-                        const result = await value.call(target, ...args);
-                        logger.info(
-                            `Method ${String(prop)} for role: ${selectorDescription} executed`
-                        );
-                        if (result != undefined) {
-                            logger.info(`Result: ${result}`);
-                        }
-                        return result;
-                    };
-                }
-                return value;
-            },
-        });
-    }
+    return new Proxy(originalLocator, {
+      get: (target, prop: PropertyKey) => {
+        const value = (target as any)[prop];
+        if (typeof value === "function") {
+          return async (...args: any[]) => {
+            if (args.length > 0) {
+              logger.info(`Arguments: ${JSON.stringify(args)}`);
+            }
+            const result = await value.call(target, ...args);
+            logger.info(
+              `Method ${String(prop)} for role: ${selectorDescription} executed`
+            );
+            if (result != undefined) {
+              logger.info(`Result: ${result}`);
+            }
+            return result;
+          };
+        }
+        return value;
+      },
+    });
+  }
 
-    getByText(text: string, options?: any): Locator {
-        const originalLocator = this.page.getByText(text, options);
-        const selectorDescription = `text=${text}${options ? ` with options ${JSON.stringify(options)}` : ""
-            }`;
+  getByText(text: string, options?: any): Locator {
+    const originalLocator = this.page.getByText(text, options);
+    const selectorDescription = `text=${text}${options ? ` with options ${JSON.stringify(options)}` : ""
+      }`;
 
-        return new Proxy(originalLocator, {
-            get: (target, prop: PropertyKey) => {
-                const value = (target as any)[prop];
-                if (typeof value === "function") {
-                    return async (...args: any[]) => {
-                        logger.info(
-                            `Calling method ${String(
-                                prop
-                            )} for text: ${selectorDescription} with arguments: ${JSON.stringify(
-                                args
-                            )}`
-                        );
-                        const result = await value.call(target, ...args);
-                        logger.info(
-                            `Method ${String(
-                                prop
-                            )} for text: ${selectorDescription} completed with result: ${result}`
-                        );
-                        return result;
-                    };
-                }
-                return value;
-            },
-        });
-    }
+    return new Proxy(originalLocator, {
+      get: (target, prop: PropertyKey) => {
+        const value = (target as any)[prop];
+        if (typeof value === "function") {
+          return async (...args: any[]) => {
+            logger.info(
+              `Calling method ${String(
+                prop
+              )} for text: ${selectorDescription} with arguments: ${JSON.stringify(
+                args
+              )}`
+            );
+            const result = await value.call(target, ...args);
+            logger.info(
+              `Method ${String(
+                prop
+              )} for text: ${selectorDescription} completed with result: ${result}`
+            );
+            return result;
+          };
+        }
+        return value;
+      },
+    });
+  }
 
-    private get isLoggingEnabled(): boolean {
-        return process.env.LOG_LOCATORS === 'true';
-    }
+  private get isLoggingEnabled(): boolean {
+    return true; // process.env.LOG_LOCATORS === 'true';
+  }
 
-    // ---- Type Guard for Locators ----
+  // ---- Type Guard for Locators ----
   // ---- Locator type guard ----
   private isLocator(obj: any): obj is Locator {
     return !!obj && typeof obj === 'object' && typeof obj['locator'] === 'function';
@@ -229,36 +240,43 @@ export abstract class BasePage {
     });
   }
 
+  private createInterceptedComponent(component: any, name: string): any {
+    const self = this;
+    return new Proxy(component, {
+      get(target, prop, receiver) {
+        const value = Reflect.get(target, prop, receiver);
 
+        if (value instanceof BaseComponent) {
+          return self.createInterceptedComponent(value, `${name}.${String(prop)}`);
+        }
+
+        if (typeof value === 'function') {
+          return async (...args: any[]) => {
+            if (self.isLoggingEnabled) {
+              console.log(`[Component] ${name}.${String(prop)} called with:`, args);
+            }
+            try {
+              const result = await value.apply(target, args);
+              if (self.isLoggingEnabled) {
+                console.log(`[Component] ${name}.${String(prop)} success`);
+              }
+
+              if (result instanceof BaseComponent) {
+                return self.createInterceptedComponent(result, `${name}.${String(prop)}()`);
+              }
+
+              return result;
+            } catch (error) {
+              if (self.isLoggingEnabled) {
+                console.error(`[Component] ${name}.${String(prop)} failed`, error);
+              }
+              throw error;
+            }
+          };
+        }
+        return value;
+      }
+    });
+  }
 
 }
-
-
-
-// Might look at the below later for intercepting locators
-// export function InterceptLocators<T extends { new (...args: any[]): {} }>(constructor: T) {
-//   return class extends constructor {
-//     constructor(...args: any[]) {
-//       super(...args);
-
-//       if (this.page) {
-//         this.page = new Proxy(this.page, {
-//           get(target, prop, receiver) {
-//             if (prop === 'locator') {
-//               return function (...args: any[]) {
-//                 console.log(`[Intercepted] Locator called with:`, args);
-//                 const locator = target.locator(...args);
-
-//                 // Optionally wrap locator here if you want to intercept further
-//                 return locator;
-//               };
-//             }
-
-//             // Default behavior
-//             return Reflect.get(target, prop, receiver);
-//           }
-//         });
-//       }
-//     }
-//   };
-// }

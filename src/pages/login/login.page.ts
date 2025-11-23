@@ -38,12 +38,12 @@ export class LoginPage extends BasePage {
     }
 
     async fillForm(email: string, password: string) {
-        // await this.emailInput.type(email);
-        await this.locatorEmail.fill(email);
+        await this.emailInput.type(email);
+        // await this.locatorEmail.fill(email);
         // await this.locator(this.stringEmailField).fill(email);
         await this.page.waitForTimeout(1000)
-        await this.locator(this.stringPassField).fill(password);
-        // await this.passwordInput.type(password);
+        // await this.locator(this.stringPassField).fill(password);
+        await this.passwordInput.type(password);
     }
 
     async setEmail(email: string): Promise<void> {

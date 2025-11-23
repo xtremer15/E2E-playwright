@@ -3,12 +3,15 @@ import { CustomAssertion } from "./CustomAssertion";
 import { InputInterface } from "../interfaces/Input.interface";
 import { retryWithBackoff } from "../utils/Utils";
 
-export class Input implements InputInterface, CustomAssertion {
+import { BaseComponent } from "./BaseComponent";
+
+export class Input extends BaseComponent implements InputInterface, CustomAssertion {
 
     readonly page!: Page;
     private selector!: Locator;
 
     constructor(page: Page, selector: string) {
+        super();
         this.page = page;
         this.selector = this.page.locator(selector);
         // console.log("Input selector:", selector);
@@ -23,10 +26,10 @@ export class Input implements InputInterface, CustomAssertion {
 
     async type(text: string): Promise<void> {
         // console.log("Waiting for selector to be visible...");
-        await retryWithBackoff(() => expect(this.selector).toBeVisible());
+        // await retryWithBackoff(() => expect(this.selector).toBeVisible());
 
-        // console.log(`Filling input with: ${text}`);
-        await retryWithBackoff(() => expect(this.selector).toBeEnabled());
+        // console.log(`Filling input with: ${ text } `);
+        // await retryWithBackoff(() => expect(this.selector).toBeEnabled());
         await this.selector.fill(text);
         // console.log("Fill complete");
     }

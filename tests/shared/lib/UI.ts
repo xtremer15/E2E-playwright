@@ -19,11 +19,6 @@ export class UIActions {
         });
     }
 
-
-    async clickByText(text: string): Promise<void> {
-        await this.page.getByText(text, { exact: true }).click();  //Matches locator with exact text and clicks
-    }
-
     async clickElementJS(locator: string): Promise<void> {
         await this.page.$eval(locator, (element: HTMLElement) => element.click());
     }
@@ -43,8 +38,8 @@ export class UIActions {
         return fs.readFileSync(`${filePath}`, `utf-8`);
     }
 
-    async writeDataIntoTextFile(filePath: number , data: string | NodeJS.ArrayBufferView): Promise<void> {
-        fs.writeFile(filePath, data, (error) => {
+    async writeDataIntoTextFile(filePath: number, data: string | NodeJS.ArrayBufferView): Promise<void> {
+        fs.writeFile(filePath, data, (error: any) => {
             if (error)
                 throw error;
         });

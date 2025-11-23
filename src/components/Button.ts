@@ -3,11 +3,14 @@ import { CustomAssertion } from "./CustomAssertion";
 import { PageFunctionOn, SmartHandle, EvaluationArgument } from "playwright-core/types/structs";
 import { IButton } from "../interfaces/Button.interface";
 
-export class Button implements IButton, CustomAssertion {
+import { BaseComponent } from "./BaseComponent";
+
+export class Button extends BaseComponent implements IButton, CustomAssertion {
     readonly page!: Page;
     readonly locator: Locator;
 
     constructor(page: Page, selector: string) {
+        super();
         this.page = page;
         this.locator = this.page.locator(selector);
     }
