@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from "@playwright/test";
 import { Input } from "../components/Input";
 import { BaseComponent } from "../components/BaseComponent";
-import { logger } from "./logger";
+import { winLogger } from "./logger";
 
 export abstract class BasePage {
   protected readonly page!: Page;
@@ -52,7 +52,7 @@ export abstract class BasePage {
         const value = (target as any)[prop];
         if (typeof value === "function") {
           return async (...args: any[]) => {
-            logger.info(
+            winLogger.info(
               `Calling method ${String(
                 prop
               )} on locator: ${selector} with arguments: ${JSON.stringify(
@@ -64,7 +64,7 @@ export abstract class BasePage {
 
             const result = await value.call(target, ...args);
             console.log("result", result)
-            logger.info(
+            winLogger.info(
               `Method ${String(
                 prop
               )} on locator: ${selector} completed with result: ${result}`
@@ -88,14 +88,14 @@ export abstract class BasePage {
         if (typeof value === "function") {
           return async (...args: any[]) => {
             if (args.length > 0) {
-              logger.info(`Arguments: ${JSON.stringify(args)}`);
+              winLogger.info(`Arguments: ${JSON.stringify(args)}`);
             }
             const result = await value.call(target, ...args);
-            logger.info(
+            winLogger.info(
               `Method ${String(prop)} for role: ${selectorDescription} executed`
             );
             if (result != undefined) {
-              logger.info(`Result: ${result}`);
+              winLogger.info(`Result: ${result}`);
             }
             return result;
           };
@@ -115,7 +115,7 @@ export abstract class BasePage {
         const value = (target as any)[prop];
         if (typeof value === "function") {
           return async (...args: any[]) => {
-            logger.info(
+            winLogger.info(
               `Calling method ${String(
                 prop
               )} for text: ${selectorDescription} with arguments: ${JSON.stringify(
@@ -123,7 +123,7 @@ export abstract class BasePage {
               )}`
             );
             const result = await value.call(target, ...args);
-            logger.info(
+            winLogger.info(
               `Method ${String(
                 prop
               )} for text: ${selectorDescription} completed with result: ${result}`
