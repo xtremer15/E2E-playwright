@@ -9,53 +9,62 @@ winston.addColors({
 });
 type LogSeverity = 'verbose' | 'info' | 'warning' | 'error';
 
-type LoggerType = {
-  launchOptions: LaunchOptions;
-  saveLogs: void,
-}
+type ExtendedFixtures = {
+  logger: Logger;
+};
 
 export const winLogger = winston.createLogger({
   level: "info",
   format: winston.format.combine(
     winston.format.colorize(),
-    winston.format.timestamp({
-      format: "YYYY-MM-DD HH:mm:ss",
-    }),
-    winston.format.printf(({ timestamp, level, message }) => {
-      return `${timestamp} [${level}]: ${message}`;
-    })
+    winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
+    winston.format.printf(({ timestamp, level, message }) => `${timestamp} [${level}]: ${message}`)
   ),
   transports: [
     new winston.transports.Console(),
-    //implement output to file or database as needed
     new winston.transports.File({ filename: 'tests.log' }),
   ],
 });
 
+const now = () => new Date().toISOString();
+const pageEventsListener = (p: Page, label: string) => winLogger.info(`${now()} ${label}: ${p.url()}`);
+const networkListneres = (req: Request, label: string) => winLogger.debug(`${now()} ${label}: ${req.method()} ${req.url()} (${req.resourceType()})`);
 
-export const fixtureLogger = testLogger.extend<LoggerType>({
-  launchOptions: async ({ }, use) => {
+export function attachPageEvents(page: Page) {
+
+  page.on("domcontentloaded", (p) => pageEventsListener(p, "DOM Loaded"));
+  page.on("load", (p) => pageEventsListener(p, "Page Loaded"));
+
+  page.on("console", (msg: ConsoleMessage) => {
+    const type = msg.type();
+    if (type === "error") winLogger.error(`${now()} Console Error: ${msg.text()}`);
+    else if (type === "warning") winLogger.warn(`${now()} Console Warning: ${msg.text()}`);
+    else winLogger.info(`${now()} Console: ${msg.text()}`);
+  });
+
+  page.on("pageerror", (err: Error) => winLogger.error(`${now()} Page Error: ${err.message}`));
+
+  page.on("request", (req) => networkListneres(req, "Request"));
+  page.on("requestfinished", (req) => networkListneres(req, "Request Finished"));
+  page.on("requestfailed", (req) => networkListneres(req, `Request Failed: ${req.method()} ${req.url()}`));
+};
+
+
+export const test = testLogger.extend<ExtendedFixtures>({
+  logger: async ({ }, use) => {
     const logger: Logger = {
-      isEnabled: (name: string, severity: LogSeverity) => name === 'api',
-      log: (name: string, severity: LogSeverity, message: string, args: any[]) => winLogger.info(`${name} ${severity} ${message} ${args.join(' ')}`)
-    }
-    await use({ logger });
+      isEnabled: (name, severity: LogSeverity) => name === "api" || name === 'ui',
+      log: (name, severity: LogSeverity, message, args) => {
+        winLogger.info(`[API] ${severity} ${message} ${args.join(" ")}`);
+      },
+    };
+
+    await use(logger);
   },
-  saveLogs: [async ({ page }, use) => {
-    const getDate = () => new Date().toISOString();
 
-    const listenerPageLoad = (page: Page, label: string) => { winLogger.info(`${getDate()} ${label}: ${page.url()}`); }
-    page.on('domcontentloaded', page => listenerPageLoad(page, 'Event DOMContentLoad'));
-    page.on('load', page => listenerPageLoad(page, 'Event Load'));
-    page.on('console', (message: ConsoleMessage) => winLogger.info(`${getDate()} Event Console: ${message.text()}`));
-    page.on('pageerror', (error: Error) => winLogger.info(`${getDate()} ## PAGE ERROR ##: ${error.message}`));
-
-    const listenerRequest = (request: Request, label: string) => { winLogger.info(`${getDate()} ${label}: ${request.url()} ${request.resourceType()}`) };
-    page.on('request', request => listenerRequest(request, 'Request'));
-    page.on('requestfinished', request => listenerRequest(request, 'Request Finished'));
-    page.on('requestfailed', request => listenerRequest(request, '## REQUEST FAILED ##'));
-
-    await use();
-  }, { auto: true }],
+  page: async ({ page }, use) => {
+    attachPageEvents(page);
+    await use(page);
+  },
 });
 export { expect } from '@playwright/test';
