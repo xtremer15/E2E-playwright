@@ -22,7 +22,7 @@ export const winLogger = winston.createLogger({
   ),
   transports: [
     new winston.transports.Console(),
-    new winston.transports.File({ filename: 'tests.log' }),
+    // new winston.transports.File({ filename: 'tests.log' }),
   ],
 });
 

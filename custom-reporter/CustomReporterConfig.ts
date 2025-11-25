@@ -7,7 +7,7 @@ const logger = winston.createLogger({
     format: winston.format.json(),
     transports: [
         // - Write all logs with importance level of `info` or less than it
-        new winston.transports.File({ filename: 'logs/info.log', level: 'info' }),
+        new winston.transports.File({ filename: 'tests.log', level: 'info' }),
     ],
 });
 
