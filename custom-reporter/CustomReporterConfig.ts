@@ -7,7 +7,7 @@ const logger = winston.createLogger({
     format: winston.format.json(),
     transports: [
         // - Write all logs with importance level of `info` or less than it
-        new winston.transports.File({ filename: 'tests.log', level: 'info' }),
+        new winston.transports.File({ filename: 'tests.txt' }),
     ],
 });
 
@@ -25,9 +25,9 @@ export default class CustomReporterConfig implements Reporter {
     }
 
     onStepBegin(test: TestCase, result: TestResult, step: TestStep): void {
-        if (step.category === `test.step`) {
-            logger.info(`Executing Step : ${step.title}`);
-        }
+        logger.info(`Executing Step : ${step.title}`);
+        // if (step.category === `test.step`) {
+        // }
     }
 
     onError(error: TestError): void {

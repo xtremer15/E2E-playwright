@@ -1,0 +1,405 @@
+{
+  "config": {
+    "configFile": "G:\\QA\\Automation Frameworks\\E2E-playwright\\playwright.config.ts",
+    "rootDir": "G:/QA/Automation Frameworks/E2E-playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "G:\\QA\\Automation Frameworks\\E2E-playwright\\src\\global.setup.ts",
+    "globalTeardown": "G:\\QA\\Automation Frameworks\\E2E-playwright\\src\\global.teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "G:\\QA\\Automation Frameworks\\E2E-playwright\\custom-reporter\\CustomReporterConfig.ts",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "G:/QA/Automation Frameworks/E2E-playwright/src/Ftest-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "login-chromium",
+        "name": "login-chromium",
+        "testDir": "G:/QA/Automation Frameworks/E2E-playwright/tests",
+        "testIgnore": [
+          "*test-assets"
+        ],
+        "testMatch": [
+          "/.*\\/login\\/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "G:/QA/Automation Frameworks/E2E-playwright/src/Ftest-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "jira-clone-chromium",
+        "name": "jira-clone-chromium",
+        "testDir": "G:/QA/Automation Frameworks/E2E-playwright/tests",
+        "testIgnore": [
+          "*test-assets"
+        ],
+        "testMatch": [
+          "/.*\\/jira-clone\\/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests-examples\\domain\\login\\login.spec.ts",
+      "file": "tests-examples/domain/login/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page Tests",
+          "file": "tests-examples/domain/login/login.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should login user with invalid data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "login-chromium",
+                  "projectName": "login-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4156,
+                      "error": {
+                        "message": "Error: page.waitForEvent: Test ended.\n=========================== logs ===========================\nwaiting for event \"domcontentloaded\"\n============================================================",
+                        "stack": "Error: page.waitForEvent: Test ended.\n=========================== logs ===========================\nwaiting for event \"domcontentloaded\"\n============================================================\n    at G:\\QA\\Automation Frameworks\\E2E-playwright\\tests\\tests-examples\\domain\\login\\login.spec.ts:20:14",
+                        "location": {
+                          "file": "G:\\QA\\Automation Frameworks\\E2E-playwright\\tests\\tests-examples\\domain\\login\\login.spec.ts",
+                          "column": 14,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     test(\u001b[32m'Should login user with invalid data'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         page\u001b[33m.\u001b[39mwaitForEvent(\u001b[32m'domcontentloaded'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mfillForm(\u001b[32m'admin'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m''\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m         \u001b[90m// await loginDomain.loginUser('admin', '');\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[36mawait\u001b[39m loginDomain\u001b[33m.\u001b[39mcheckEmailErrorIsDisplayed(\u001b[33mLoginErrors\u001b[39m\u001b[33m.\u001b[39m\u001b[33mPASSWORD_REQUIRED\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "G:\\QA\\Automation Frameworks\\E2E-playwright\\tests\\tests-examples\\domain\\login\\login.spec.ts",
+                            "column": 14,
+                            "line": 20
+                          },
+                          "message": "Error: page.waitForEvent: Test ended.\n=========================== logs ===========================\nwaiting for event \"domcontentloaded\"\n============================================================\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     test(\u001b[32m'Should login user with invalid data'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         page\u001b[33m.\u001b[39mwaitForEvent(\u001b[32m'domcontentloaded'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mfillForm(\u001b[32m'admin'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m''\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m         \u001b[90m// await loginDomain.loginUser('admin', '');\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[36mawait\u001b[39m loginDomain\u001b[33m.\u001b[39mcheckEmailErrorIsDisplayed(\u001b[33mLoginErrors\u001b[39m\u001b[33m.\u001b[39m\u001b[33mPASSWORD_REQUIRED\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at G:\\QA\\Automation Frameworks\\E2E-playwright\\tests\\tests-examples\\domain\\login\\login.spec.ts:20:14\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"#login button\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"#login button\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:47 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Component] emailInput.type called with: [\"admin\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Component] emailInput.type success\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[34minfo\u001b[39m]: \u001b[34m[Component] passwordInput.type called with: [\"\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Component] passwordInput.type success\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'\u001b[39m\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-11-27T21:23:44.840Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA\\Automation Frameworks\\E2E-playwright\\src\\Ftest-results\\tests-examples-domain-logi-aa0c5-ogin-user-with-invalid-data-login-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "_error-context-0",
+                          "contentType": "text/markdown",
+                          "path": "G:\\QA\\Automation Frameworks\\E2E-playwright\\src\\Ftest-results\\tests-examples-domain-logi-aa0c5-ogin-user-with-invalid-data-login-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "G:\\QA\\Automation Frameworks\\E2E-playwright\\tests\\tests-examples\\domain\\login\\login.spec.ts",
+                        "column": 14,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "635f6df3f0301db7a9c8-2d08f4d52d22406d3986",
+              "file": "tests-examples/domain/login/login.spec.ts",
+              "line": 19,
+              "column": 9
+            },
+            {
+              "title": "Should login user with valid data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "login-chromium",
+                  "projectName": "login-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30142,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"#login button\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"#login button\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:48 [\u001b[34minfo\u001b[39m]: \u001b[34m[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[34minfo\u001b[39m]: \u001b[34m[Component] emailInput.type called with: [\"admin\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:49 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Component] emailInput.type success\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:50 [\u001b[34minfo\u001b[39m]: \u001b[34m[Component] passwordInput.type called with: [\"admin\"]\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:50 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'\u001b[39m\r\n"
+                        },
+                        {
+                          "text": "2025-11-27 23:23:50 [\u001b[32msuccess\u001b[39m]: \u001b[32m[Component] passwordInput.type success\u001b[39m\r\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "Attempt 1 failed. Retrying in 500ms...\n"
+                        },
+                        {
+                          "text": "Attempt 2 failed. Retrying in 1000ms...\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-11-27T21:23:44.881Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "G:\\QA\\Automation Frameworks\\E2E-playwright\\src\\Ftest-results\\tests-examples-domain-logi-5726c--login-user-with-valid-data-login-chromium\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "635f6df3f0301db7a9c8-69e87c764bd3e1524457",
+              "file": "tests-examples/domain/login/login.spec.ts",
+              "line": 26,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests-examples\\domain\\jira-clone\\jira-clone.spec.ts",
+      "file": "tests-examples/domain/jira-clone/jira-clone.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Angular Jira Clone Tests",
+          "file": "tests-examples/domain/jira-clone/jira-clone.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "The navigation to mailwind harmony",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "jira-clone-chromium",
+                  "projectName": "jira-clone-chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d52f9e5f4bac64c576ee-c4f73af815307d7033b9",
+              "file": "tests-examples/domain/jira-clone/jira-clone.spec.ts",
+              "line": 13,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "Error: src\\global.teardown.ts: file must export a single function.",
+      "stack": "Error: src\\global.teardown.ts: file must export a single function."
+    }
+  ],
+  "stats": {
+    "startTime": "2025-11-27T21:23:42.709Z",
+    "duration": 34951.276,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

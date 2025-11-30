@@ -16,8 +16,8 @@ export const USE_GLOBAL_SETUP: any = {
 
     // Credentials for HTTP authentication.
     httpCredentials: {
-        username: 'user',
-        password: 'pass',
+        username: 'admin',
+        password: 'admin',
     },
 
     // Whether to ignore HTTPS errors during navigation.

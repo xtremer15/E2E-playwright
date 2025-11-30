@@ -17,6 +17,7 @@ test.describe('Login Page Tests', () => {
     });
 
     test('Should login user with invalid data', async ({ page }) => {
+        page.waitForEvent('domcontentloaded');
         await loginPage.fillForm('admin', '');
         // await loginDomain.loginUser('admin', '');
         await loginDomain.checkEmailErrorIsDisplayed(LoginErrors.PASSWORD_REQUIRED);

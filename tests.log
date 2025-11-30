@@ -1,0 +1,514 @@
+{"level":"info","message":"[Component] emailInput.type called with:"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with:"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] emailInput.type called with:"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with:"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] emailInput.type called with:"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with:"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] emailInput.type called with:"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with:"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] emailInput.type called with:"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with:"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] emailInput.type called with:"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with:"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"0":"admin","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"0":"","level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with:"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with:"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")' with: [\"admin\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"info","message":"[Locator.fill] on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")' with: [\"\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] on 'locator(\"div.error:first-of-type\")' with: []"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] on 'locator(\"div.error:first-of-type\")' with: []"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"info","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"success","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"success","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"success","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"success","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"success","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"success","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"User\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"#login button\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:first-of-type\"]"}
+{"level":"info","message":"[Intercepted] page.locator() called with: [\"div.error:nth-of-type(2)\"]"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}
+{"level":"success","message":"[Locator.isVisible] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"success","message":"[Locator.textContent] success on 'locator(\"div.error:first-of-type\")'"}
+{"level":"info","message":"[Component] emailInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"User\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] emailInput.type success"}
+{"level":"info","message":"[Component] passwordInput.type called with: [\"admin\"]"}
+{"level":"success","message":"[Locator.fill] success on 'locator(\"//label[text()=\\\"Password\\\"]/preceding-sibling::input\")'"}
+{"level":"success","message":"[Component] passwordInput.type success"}

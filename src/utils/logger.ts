@@ -1,30 +1,55 @@
 import winston from "winston";
 import { ConsoleMessage, LaunchOptions, Logger, Page, Request, test as testLogger } from "@playwright/test";
+import { fullLineColorFormat } from "./Utils";
+import { Console } from "console";
 
-winston.addColors({
-  info: "green",
-  warn: "yellow",
-  error: "red",
-  debug: "cyan",
-});
 type LogSeverity = 'verbose' | 'info' | 'warning' | 'error';
 
 type ExtendedFixtures = {
   logger: Logger;
 };
 
+
+type CustomLogger = winston.Logger & {
+  success: (msg: string) => winston.Logger;
+  failed: (msg: string) => winston.Logger;
+};
+
+const loggingLevels = {
+  levels: {
+    error:   0,   
+    warn:    1,
+    failed:  2,   
+    info:    3,
+    success: 4,   
+    debug:   5,   
+  },
+  colors: {
+    error:   "red",
+    warn:    "yellow",
+    failed:  "magenta",
+    info:    "blue",
+    success: "green",
+    debug:   "cyan",
+  },
+};
+winston.addColors(loggingLevels.colors);
+
 export const winLogger = winston.createLogger({
-  level: "info",
-  format: winston.format.combine(
-    winston.format.colorize(),
-    winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
-    winston.format.printf(({ timestamp, level, message }) => `${timestamp} [${level}]: ${message}`)
-  ),
+  levels: loggingLevels.levels,
+  level: "debug",
   transports: [
-    new winston.transports.Console(),
-    // new winston.transports.File({ filename: 'tests.log' }),
+    new winston.transports.Console({
+      format: winston.format.combine(
+        fullLineColorFormat(),
+        winston.format.colorize({ all: true }),
+        winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
+        winston.format.printf(({ timestamp, level, message }) => `${timestamp} [${level}]: ${message}`)
+      )
+    }),
+    new winston.transports.File({ filename: 'tests.log' }),
   ],
-});
+}) as CustomLogger;
 
 const now = () => new Date().toISOString();
 const pageEventsListener = (p: Page, label: string) => winLogger.info(`${now()} ${label}: ${p.url()}`);

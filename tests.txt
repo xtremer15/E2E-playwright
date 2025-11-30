@@ -1,0 +1,154 @@
+{"level":"info","message":"Test Case Started : Should login user with valid data"}
+{"level":"info","message":"Test Case Started : Should login user with invalid data"}
+{"level":"info","message":"Test Case Completed : Should login user with invalid data Status : failed"}
+{"level":"info","message":"Test Case Completed : Should login user with valid data Status : timedOut"}
+{"level":"error","message":"Error: src\\global.teardown.ts: file must export a single function."}
+{"level":"info","message":"Test Case Started : Should login user with invalid data"}
+{"level":"info","message":"Test Case Started : Should login user with valid data"}
+{"level":"info","message":"Test Case Completed : Should login user with invalid data Status : failed"}
+{"level":"info","message":"Test Case Completed : Should login user with valid data Status : timedOut"}
+{"level":"error","message":"Error: src\\global.teardown.ts: file must export a single function."}
+{"level":"info","message":"Test Case Started : Should login user with valid data"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Test Case Started : Should login user with invalid data"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : page.waitForEvent"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : expect.toBe"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with invalid data Status : failed"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : page.screenshot"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with valid data Status : timedOut"}
+{"level":"error","message":"Error: src\\global.teardown.ts: file must export a single function."}
+{"level":"info","message":"Test Case Started : Should login user with invalid data"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Test Case Started : Should login user with valid data"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : page.waitForEvent"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : expect.toBe"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with invalid data Status : failed"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : page.screenshot"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with valid data Status : timedOut"}
+{"level":"error","message":"Error: src\\global.teardown.ts: file must export a single function."}
+{"level":"info","message":"Test Case Started : Should login user with invalid data"}
+{"level":"info","message":"Test Case Started : Should login user with valid data"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : page.waitForEvent"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : expect.toBe"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with invalid data Status : failed"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : page.screenshot"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with valid data Status : timedOut"}
+{"level":"error","message":"Error: src\\global.teardown.ts: file must export a single function."}

@@ -1,4 +1,29 @@
 import { Page } from "@playwright/test";
+import winston from "winston";
+
+
+export const fullLineColorFormat = winston.format((info) => {
+    const colorMap: Record<string, string> = {
+        success: "\x1b[32m", // green
+        failed: "\x1b[35m",  // magenta
+        error: "\x1b[31m",   // red
+        warn: "\x1b[33m",    // yellow
+        info: "\x1b[34m",    // blue
+        debug: "\x1b[36m",   // cyan
+    };
+
+    const color = colorMap[info.level] || "";
+    const reset = "\x1b[0m";
+
+    // Apply color to the full line (timestamp + level + message)
+    info.fullLineColor = (text: string) => `${color}${text}${reset}`;
+
+    return info;
+});
+
+
+
+
 
 export async function retryWithBackoff<T>(
     fn: () => Promise<T>,

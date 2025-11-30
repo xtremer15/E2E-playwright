@@ -43,95 +43,7 @@ export abstract class BasePage {
     expect(errorMsg).toBe(erorMessage);
   }
 
-  locator(selector: string): Locator {
-    const originalLocator = this.page.locator(selector);
-
-    return new Proxy(originalLocator, {
-      get: (target, prop: PropertyKey) => {
-        const value = (target as any)[prop];
-        if (typeof value === "function") {
-          return async (...args: any[]) => {
-            winLogger.info(
-              `Calling method ${String(
-                prop
-              )} on locator: ${selector} with arguments: ${JSON.stringify(
-                args
-              )}`
-            );
-       
-            const result = await value.call(target, ...args);
-            
-            winLogger.info(
-              `Method ${String(
-                prop
-              )} on locator: ${selector} completed with result: ${result}`
-            );
-            return result;
-          };
-        }
-        return value;
-      },
-    });
-  }
-
-  getByRole(role: string, options?: any): Locator {
-    const originalLocator = this.page.getByRole(role as any, options);
-    const selectorDescription = `role = ${role}${options ? ` with options ${JSON.stringify(options)}` : ""
-      }`;
-
-    return new Proxy(originalLocator, {
-      get: (target, prop: PropertyKey) => {
-        const value = (target as any)[prop];
-        if (typeof value === "function") {
-          return async (...args: any[]) => {
-            if (args.length > 0) {
-              winLogger.info(`Arguments: ${JSON.stringify(args)}`);
-            }
-            const result = await value.call(target, ...args);
-            winLogger.info(
-              `Method ${String(prop)} for role: ${selectorDescription} executed`
-            );
-            if (result != undefined) {
-              winLogger.info(`Result: ${result}`);
-            }
-            return result;
-          };
-        }
-        return value;
-      },
-    });
-  }
-
-  getByText(text: string, options?: any): Locator {
-    const originalLocator = this.page.getByText(text, options);
-    const selectorDescription = `text=${text}${options ? ` with options ${JSON.stringify(options)}` : ""
-      }`;
-
-    return new Proxy(originalLocator, {
-      get: (target, prop: PropertyKey) => {
-        const value = (target as any)[prop];
-        if (typeof value === "function") {
-          return async (...args: any[]) => {
-            winLogger.info(
-              `Calling method ${String(
-                prop
-              )} for text: ${selectorDescription} with arguments: ${JSON.stringify(
-                args
-              )}`
-            );
-            const result = await value.call(target, ...args);
-            winLogger.info(
-              `Method ${String(
-                prop
-              )} for text: ${selectorDescription} completed with result: ${result}`
-            );
-            return result;
-          };
-        }
-        return value;
-      },
-    });
-  }
+ 
 
   private get isLoggingEnabled(): boolean {
     return true; // process.env.LOG_LOCATORS === 'true';
@@ -153,9 +65,9 @@ export abstract class BasePage {
 
         if (typeof orig === 'function') {
           return (...args: any[]) => {
-            if (self.isLoggingEnabled) {
-              winLogger.info(`[Locator.${String(prop)}] on '${selector}' with:`, args);
-            }
+            // if (self.isLoggingEnabled) {
+            //   winLogger.info(`[Locator.${String(prop)}] on '${selector}' with: ${JSON.stringify(args)}` );
+            // }
 
             try {
               const result = orig.apply(target, args);
@@ -165,13 +77,13 @@ export abstract class BasePage {
                 return result.then(
                   res => {
                     if (self.isLoggingEnabled) {
-                      winLogger.info(`[Locator.${String(prop)}] success on '${selector}'`);
+                      winLogger.success(`[Locator.${String(prop)}] success on '${selector}'`);
                     }
                     return res;
                   },
                   err => {
                     if (self.isLoggingEnabled) {
-                      winLogger.error(`[Locator.${String(prop)}] failed on '${selector}'`, err);
+                      winLogger.error(`[Locator.${String(prop)}] failed on '${selector}' ${JSON.stringify(err)}`, );
                     }
                     throw err;
                   }
@@ -188,7 +100,7 @@ export abstract class BasePage {
               return result;
             } catch (e) {
               if (self.isLoggingEnabled) {
-                winLogger.error(`[Locator.${String(prop)}] failed on '${selector}'`, e);
+                winLogger.error(`[Locator.${String(prop)}] failed on '${selector}' ${JSON.stringify(e)}`, );
               }
               throw e;
             }
@@ -222,7 +134,7 @@ export abstract class BasePage {
         if (locatorFactories.includes(prop as keyof Page)) {
           return (...args: any[]): Locator => {
             if (self.isLoggingEnabled) {
-              winLogger.info(`[Intercepted] page.${String(prop)}() called with:`, args);
+              winLogger.info(`[Intercepted] page.${String(prop)}() called with: ${JSON.stringify(args)}`, );
             }
 
             const locator = (orig as Function).apply(target, args);
@@ -250,12 +162,12 @@ export abstract class BasePage {
         if (typeof value === 'function') {
           return async (...args: any[]) => {
             if (self.isLoggingEnabled) {
-              winLogger.info(`[Component] ${name}.${String(prop)} called with:`, args);
+              winLogger.info(`[Component] ${name}.${String(prop)} called with: ${JSON.stringify(args)}`)
             }
             try {
               const result = await value.apply(target, args);
               if (self.isLoggingEnabled) {
-                winLogger.info(`[Component] ${name}.${String(prop)} success`);
+                winLogger.success(`[Component] ${name}.${String(prop)} success`);
               }
 
               if (result instanceof BaseComponent) {
@@ -265,7 +177,7 @@ export abstract class BasePage {
               return result;
             } catch (error) {
               if (self.isLoggingEnabled) {
-                winLogger.error(`[Component] ${name}.${String(prop)} failed`, error);
+                winLogger.error(`[Component] ${name}.${String(prop)} failed: ${JSON.stringify(error)}`, );
               }
               throw error;
             }
