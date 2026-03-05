@@ -14,6 +14,12 @@ export const PROJECT_BROWSER_CONFIG: any = [
         use: { ...devices['Desktop Chrome'] },
 
     },
+    {
+        name: 'todo-chromium',
+        testMatch: 'demo-todo-app.spec.ts',
+        dependencies: ['login-chromium'],
+        use: { ...devices['Desktop Firefox'] },
+    }
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },

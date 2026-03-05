@@ -152,3 +152,176 @@
 {"level":"info","message":"Executing Step : fixture: browser"}
 {"level":"info","message":"Test Case Completed : Should login user with valid data Status : timedOut"}
 {"level":"error","message":"Error: src\\global.teardown.ts: file must export a single function."}
+{"level":"info","message":"Test Case Started : Should login user with valid data"}
+{"level":"info","message":"Test Case Started : Should login user with invalid data"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Executing Step : browserType.launch"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : browser.newContext"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : browserContext.newPage"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : proxy.goto(https://angular-login-module.vercel.app/login)"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : page.waitForLoadState"}
+{"level":"info","message":"Executing Step : page.waitForEvent"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"User\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForTimeout"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : locator.apply(//label[text()=\"Password\"]/preceding-sibling::input)"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : locator.apply(div.error:first-of-type)"}
+{"level":"info","message":"Executing Step : expect.toBe"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with invalid data Status : failed"}
+{"level":"info","message":"Executing Step : proxy.waitForURL"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : page.screenshot"}
+{"level":"info","message":"Executing Step : fixture: page"}
+{"level":"info","message":"Executing Step : fixture: context"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : fixture: browser"}
+{"level":"info","message":"Test Case Completed : Should login user with valid data Status : timedOut"}
+{"level":"error","message":"Error: src\\global.teardown.ts: file must export a single function."}
+{"level":"error","message":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."}
+{"level":"error","message":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."}
+{"level":"error","message":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."}
+{"level":"error","message":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."}
+{"level":"error","message":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."}
+{"level":"info","message":"Test Case Started : should allow me to add todo items"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : should allow me to add todo items Status : failed"}
+{"level":"info","message":"Test Case Started : should clear text input field when an item is added"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : should clear text input field when an item is added Status : failed"}
+{"level":"info","message":"Test Case Started : should append new items to the bottom of the list"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : should append new items to the bottom of the list Status : failed"}
+{"level":"info","message":"Test Case Started : should allow me to mark all items as completed"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"context\""}
+{"level":"info","message":"Executing Step : Fixture \"page\""}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : afterEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"page\""}
+{"level":"info","message":"Executing Step : Fixture \"context\""}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : should allow me to mark all items as completed Status : failed"}
+{"level":"info","message":"Test Case Started : should allow me to clear the complete state of all items"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"context\""}
+{"level":"info","message":"Executing Step : Fixture \"page\""}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : afterEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"page\""}
+{"level":"info","message":"Executing Step : Fixture \"context\""}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : should allow me to clear the complete state of all items Status : failed"}
+{"level":"info","message":"Test Case Started : complete all checkbox should update state when items are completed / cleared"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"context\""}
+{"level":"info","message":"Executing Step : Fixture \"page\""}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : afterEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"page\""}
+{"level":"info","message":"Executing Step : Fixture \"context\""}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : complete all checkbox should update state when items are completed / cleared Status : failed"}
+{"level":"info","message":"Test Case Started : should allow me to mark items as complete"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Test Case Completed : should allow me to mark items as complete Status : skipped"}
+{"level":"info","message":"Test Case Started : Should login user with valid data"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Test Case Started : Should login user with invalid data"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : Should login user with valid data Status : failed"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : Should login user with invalid data Status : failed"}
+{"level":"info","message":"Test Case Started : should clear text input field when an item is added"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Started : should allow me to add todo items"}
+{"level":"info","message":"Test Case Completed : should clear text input field when an item is added Status : failed"}
+{"level":"info","message":"Executing Step : Before Hooks"}
+{"level":"info","message":"Executing Step : beforeEach hook"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Executing Step : Launch browser"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Executing Step : Fixture \"browser\""}
+{"level":"info","message":"Test Case Completed : should allow me to add todo items Status : failed"}
+{"level":"info","message":"Test Case Started : should append new items to the bottom of the list"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Test Case Completed : should append new items to the bottom of the list Status : skipped"}
+{"level":"info","message":"Test Case Started : should allow me to mark all items as completed"}
+{"level":"info","message":"Executing Step : After Hooks"}
+{"level":"info","message":"Executing Step : Worker Cleanup"}
+{"level":"info","message":"Test Case Completed : should allow me to mark all items as completed Status : skipped"}

@@ -1,4 +1,8 @@
-export const teardown = async () => {
-  // Perform any global teardown actions here
-  console.log("Global teardown completed.");
+// ✅ Correct: single default export function
+async function globalTeardown() {
+    console.log("Cleaning up resources...");
+    // e.g., stop servers, close DB connections, etc.
 }
+
+
+module.exports = globalTeardown;

@@ -25,8 +25,7 @@ export default defineConfig({
   // timeout: 8000,
   // path to the global setup files.
   globalSetup: require.resolve('./src/global.setup.ts'),
-  // path to the global teardown files.
-  globalTeardown: require.resolve('./src/global.teardown.ts'),
+  globalTeardown: './src/global.teardown.ts',
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */

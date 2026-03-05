@@ -19,6 +19,7 @@ export const USE_GLOBAL_SETUP: any = {
         username: 'admin',
         password: 'admin',
     },
+    headless: false,
 
     // Whether to ignore HTTPS errors during navigation.
     ignoreHTTPSErrors: false,
