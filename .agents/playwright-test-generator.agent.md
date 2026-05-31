@@ -5,7 +5,7 @@ tools:
   - search
   - playwright-test/browser_click
   - playwright-test/browser_drag
-  - playwright-test/browser_evaluate
+  - playwright-test/browser_evaluate/
   - playwright-test/browser_file_upload
   - playwright-test/browser_handle_dialog
   - playwright-test/browser_hover
