@@ -10,6 +10,8 @@ export class LoginPage extends BasePage {
     private stringEmailField: string = this.locators.usernameField;
     private stringPassField: string = this.locators.passwordField;
     private stringLoginBTN: string = this.locators.loginButton;
+    private someLocator: string = this.locators.someLocator;
+
 
     private locatorEmail = this.page.locator(this.locators.usernameField);
     private locatorPassword = this.page.locator(this.locators.passwordField);
@@ -27,6 +29,10 @@ export class LoginPage extends BasePage {
     async clickLogin() {
         await this.page.waitForLoadState('domcontentloaded');
         await this.loginButton.click();
+    }
+
+    async newClickLogin() {
+
     }
 
     async getLoginBTN(): Promise<string> {
